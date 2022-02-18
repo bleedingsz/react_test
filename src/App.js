@@ -3,12 +3,12 @@ import Header from './view/header/header.js';
 
 
 
-function App() {
+const App = () => {
   return (
       <React.Fragment>
         <Header/>
       </React.Fragment>
   );
-}
+};
 
 export default App;
