@@ -4,10 +4,11 @@ const networkId = 56,
       BLOCKNATIVE_KEY = "8a4d7093-47fa-410e-91be-78d45ee29bcf";
 
 
-export const initOnboard = (subscriptions) => {
-    return Onboard({
+export function initOnboard (subscriptions){
+    const onboard = Onboard;
+    return onboard({
         hideBranding: false,
-        dappId: BLOCKNATIVE_KEY,
+        BLOCKNATIVE_KEY,
         network: networkId,
         darkMode: true,
         subscriptions,
@@ -25,4 +26,4 @@ export const initOnboard = (subscriptions) => {
             { checkName: "balance" }
         ]
     })
-};
+}
